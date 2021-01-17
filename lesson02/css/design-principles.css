@@ -3,12 +3,12 @@ body {
   font-family: "Lato", sans-serif;
   line-height: 1.25;
   background-color: hsl(230, 25%, 90%);
-  max-width: 760px;
+  max-width: 64em;
   margin: auto;
 }
 
 #container {
-  background-color: white;
+  background-color: hsl(230, 25%, 95%);
 }
 
 h1,
@@ -16,17 +16,43 @@ h2 {
   font-weight: 400;
 }
 
-p {
-  margin: 1em;
+p, h2 {
+  padding: 1em;
+  margin: 0;
 }
+
+footer p {
+  padding: 0;
+}
+
 
 header,
 footer {
   margin: 1em -1em;
 }
 
+section {
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+section {
+  text-align: center;
+}
+
+section img {
+  width: calc(100% - 1em);
+  box-shadow: 0 0 2px rgba(0,0,0,0.25);
+  margin: 0.5em;
+  border-radius: 2px;
+}
+
 main {
-  margin: auto 4em;
+  margin: 1em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
 }
 
 header,
