@@ -1,4 +1,4 @@
-@media(min-width:64em) {
+@media (min-width: 64em) {
   main {
     grid-template-columns: 1fr 1fr 1fr;
   }

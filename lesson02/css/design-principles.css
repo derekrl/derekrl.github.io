@@ -16,16 +16,6 @@ h2 {
   font-weight: 400;
 }
 
-p, h2 {
-  padding: 1em;
-  margin: 0;
-}
-
-footer p {
-  padding: 0;
-}
-
-
 header,
 footer {
   margin: 1em -1em;
@@ -35,17 +25,23 @@ section {
   background-color: white;
   border-radius: 2px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
-}
-
-section {
   text-align: center;
 }
 
 section img {
-  width: calc(100% - 1em);
-  box-shadow: 0 0 2px rgba(0,0,0,0.25);
-  margin: 0.5em;
+  width: calc(100% - 2em);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
+}
+
+section img,
+section p,
+section a {
+  margin: 1em;
+}
+
+section a {
+  display: block;
 }
 
 main {
@@ -58,7 +54,11 @@ main {
 header,
 footer {
   background-color: hsl(210, 50%, 30%);
-  background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.25));
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(0, 0, 0, 0.25)
+  );
   color: white;
   border-radius: 4px;
   padding: 0.25em 0.5em;
