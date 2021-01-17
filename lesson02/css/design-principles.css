@@ -37,7 +37,8 @@ section img {
 section img,
 section p,
 section a {
-  margin: 1em;
+  margin: 0 1em;
+  margin-bottom: 1em;
 }
 
 section a {
