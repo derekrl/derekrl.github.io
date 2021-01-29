@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather for Preston, Idaho</title>
+    <meta
+      name="description"
+      content="Preston Idaho current weather, 5-day forecast, and everything else you need to know"
+    />
+    <link rel="shortcut icon" href="images/weather-logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oswald:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="images/weather-logo.svg" alt="Site logo" />
+      <section class="headers">
+        <h1>Tri-City Weather</h1>
+        <h3>What you need to know</h3>
+      </section>
+    </header>
+    <nav id="nav-menu" class="hidden">
+      <!-- id on here to cascade the class for changing the button icon -->
+      <button onclick="navMenu()"><span>Menu</span></button>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li class="current"><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <h2>Hero w/ weather summary</h2>
+      </section>
+      <section>
+        <h2>5-Day Forecast</h2>
+      </section>
+      <section>
+        <h2>Article</h2>
+      </section>
+      <section>
+        <h2>Contact Information</h2>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; Tri-City Weather | Derek Long<br />
+        <span id="current-date"></span>
+      </p>
+    </footer>
+    <script src="js/footer.js"></script>
+    <script src="js/navMenu.js"></script>
+  </body>
+</html>

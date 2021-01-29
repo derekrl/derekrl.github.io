@@ -3,8 +3,10 @@ body {
   font-family: "Lato", sans-serif;
   line-height: 1.25;
   background-color: hsl(230, 25%, 90%);
-  max-width: 760px;
-  margin: auto;
+}
+
+header, nav, main, footer {
+  width: 100%;
 }
 
 header,
@@ -12,21 +14,36 @@ footer {
   background-color: hsl(210, 50%, 30%);
   color: white;
   text-align: center;
-  padding: 0.25rem;
+  padding: 0.25rem 0;
 }
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
 }
 
-header h2 {
+header h3 {
   font-weight: 200;
-  margin-top: -0.5em;
+  margin-top: -1em;
 }
 
-main h2 {
-  color: hsl(210, 50%, 30%);
+header img {
+  width: 90px;
+  height: auto;
+}
+
+header .headings {
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -37,25 +54,53 @@ footer a {
   color: hsl(40, 80%, 70%);
 }
 
-footer p {
-  line-height: 0.75;
-}
-
 nav {
   background: hsl(40, 80%, 70%);
   width: 100%;
+  text-align: center;
+}
+
+nav button {
+  border: none;
+  background: none;
+  color: black;
+  font-weight: bold;
+  padding: 1em 0;
+  width: 100%;
+}
+
+nav:not(.hidden) button {
+  border-bottom: 2px solid hsl(40, 80%, 30%);
+}
+
+nav button::before {
+  content: '\23f7';
+  padding-right: .25em;
+  /* small down triangle */
+}
+
+nav.hidden button::before {
+  content: '\2261';
+  /* identical to */
+}
+
+nav.hidden ul {
+  display: none;
 }
 
 nav ul {
-  /* display: flex; */
   padding-left: 0;
   margin: auto;
 }
 
 nav ul li {
-  /* flex: 1 1 100%; */
   list-style-type: none;
   text-align: center;
+}
+
+nav ul li.current a {
+  background-color: rgba(255,255,255,0.5);
+  font-weight: bold;
 }
 
 nav ul li a {
@@ -68,13 +113,21 @@ nav ul li a {
 nav ul li a:hover {
   background-color: white;
   font-weight: bold;
-  box-shadow: 0 4px hsl(40, 80%, 30%);
 }
 
 main {
-  background-color: white;
+  /* background-color: white; */
   text-align: center;
-  padding: 0.5rem;
+}
+
+main h2 {
+  color: hsl(210, 50%, 30%);
+}
+
+main section {
+  background-color: #eee;
+  border: 2px dotted #999;
+  margin: 1em 0;
 }
 
 section#colors p span {
