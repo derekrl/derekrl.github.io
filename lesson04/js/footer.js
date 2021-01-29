@@ -3,5 +3,3 @@ const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Frida
 let currentDate = new Date()
 let formattedDate = weekdays[currentDate.getDay()] + ", " + currentDate.getDate() + " " + months[currentDate.getMonth()] + " " + currentDate.getFullYear()
 document.getElementById('current-date').textContent = formattedDate;
-
-// Wednesday, 24 July 2020
