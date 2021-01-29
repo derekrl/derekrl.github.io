@@ -69,28 +69,14 @@ nav button {
   width: 100%;
 }
 
-nav:not(.hidden) button {
-  border-bottom: 2px solid hsl(40, 80%, 30%);
-}
-
-nav button::before {
-  content: '\23f7';
-  padding-right: .25em;
-  /* small down triangle */
-}
-
-nav.hidden button::before {
-  content: '\2261';
-  /* identical to */
-}
-
-nav.hidden ul {
+nav ul.hidden {
   display: none;
 }
 
 nav ul {
   padding-left: 0;
   margin: auto;
+  border-top: 2px solid hsl(40, 80%, 30%);
 }
 
 nav ul li {

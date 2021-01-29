@@ -27,8 +27,9 @@
   }
 
   nav ul,
-  nav.hidden ul {
+  nav ul.hidden {
     display: flex;
+    border-top: none;
   }
 
   nav ul li {
