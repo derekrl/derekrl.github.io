@@ -17,6 +17,10 @@
     margin: auto;
   }
 
+  main section p {
+    margin: 0 1em;
+  }
+
   section#hero {
     position: relative;
     padding-bottom: 0;
@@ -41,7 +45,7 @@
 
   section#article img {
     float: right;
-    margin: .5em;
+    margin: 0 1em;
   }
 
 }
