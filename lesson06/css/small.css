@@ -1,0 +1,207 @@
+body {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  line-height: 1.25;
+  background-color: hsl(230, 25%, 90%);
+}
+
+header,
+nav,
+main,
+footer {
+  width: 100%;
+}
+
+header,
+footer {
+  background-color: hsl(210, 50%, 30%);
+  color: white;
+  text-align: center;
+  padding: 0.25rem 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+h1,
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+
+section#currentevent p {
+  background: hsl(40, 80%, 70%);
+  margin: 0 auto;
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+header p {
+  margin-top: -1em;
+}
+
+header h1 {
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.75);
+}
+
+header p {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+header img {
+  width: 90px;
+  height: auto;
+}
+
+header .headings {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: hsl(40, 80%, 30%);
+}
+
+footer a {
+  color: hsl(40, 80%, 70%);
+}
+
+nav {
+  background: hsl(40, 80%, 70%);
+  width: 100%;
+  text-align: center;
+}
+
+nav button {
+  border: none;
+  background: none;
+  color: black;
+  font-weight: bold;
+  padding: 1em 0;
+  width: 100%;
+}
+
+nav ul.hidden {
+  display: none;
+}
+
+nav ul {
+  padding-left: 0;
+  margin: auto;
+  border-top: 2px solid hsl(40, 80%, 30%);
+}
+
+nav ul li {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li.current a {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.5rem;
+  color: black;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  font-weight: bold;
+}
+
+main {
+  /* background-color: white; */
+  text-align: center;
+}
+
+main h1,
+main h2 {
+  color: hsl(210, 50%, 30%);
+}
+
+main > section {
+  background-color: #fff;
+  /* border: 2px dotted #999; */
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  padding-bottom: 1em;
+}
+
+main section h1,
+main section h2 {
+  padding: 0.5em;
+}
+
+main section p {
+  margin: 0 0.5em;
+}
+
+section#currentevent {
+  display: none;
+}
+
+section#currentevent.friday {
+  display: block;
+}
+
+section#hero img {
+  width: 100%;
+  vertical-align: top;
+}
+
+section#summary h2 {
+  padding:initial;
+}
+
+section#summary section {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+}
+
+section#summary section p {
+  margin: 0 0.25em;
+}
+
+section#summary section p.titles {
+  text-align: right;
+}
+
+section#summary section p.data {
+  text-align: left;
+}
+
+section#fiveday table {
+  margin: 0 auto;
+}
+
+section#article img {
+  max-width: 100%;
+}
+
+section#contact .flexwrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+section#contact p {
+  text-align: left;
+  line-height: 1.5;
+  margin: 0.5em;
+}
+
+section#contact p img {
+  vertical-align: middle;
+  margin-right: 0.25em;
+  height: 1.25em;
+  width: auto;
+}

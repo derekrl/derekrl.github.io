@@ -1,0 +1,52 @@
+@media (min-width: 32.5em) {
+  
+  header img {
+    width: 120px;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
+
+  header p {
+    font-size: 20px;
+  }
+
+  main {
+    max-width: 48em;
+    margin: auto;
+  }
+
+  main section p {
+    margin: 0 1em;
+  }
+
+  section#hero {
+    position: relative;
+    padding-bottom: 0;
+  }
+
+  section#summary {
+    position: absolute;
+    background: rgba(255,255,255,0.75);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+    padding: .5em;
+    bottom: 1em;
+    left: 1em;
+  }
+
+  section#summary h2 {
+    margin: 0 0 .25em 0;
+  }
+
+  section#fiveday table td {
+    padding: 0 .5em;
+  }
+
+  section#article img {
+    max-width: 50%;
+    float: right;
+    margin: 0 1em;
+  }
+
+}
