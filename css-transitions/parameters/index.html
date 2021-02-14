@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transitions - Parameters</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header><h1>Transition Parameters</h1></header>
+    <main>
+      <section id="property">
+        <h2>Property</h2>
+        <div class="button-group">
+          <div class="radios">
+            <input
+              type="radio"
+              name="property"
+              id="p-color"
+              onClick="classSet('property',1)"
+              checked
+            />
+            <label for="p-color">Color</label><br />
+            <input
+              type="radio"
+              name="property"
+              id="p-width"
+              onClick="classSet('property',2)"
+            />
+            <label for="p-width">Width</label><br />
+            <input
+              type="radio"
+              name="property"
+              id="p-fontsize"
+              onClick="classSet('property',3)"
+            />
+            <label for="p-fontsize">Font Size</label><br />
+            <input
+              type="radio"
+              name="property"
+              id="p-shadow"
+              onClick="classSet('property',4)"
+            />
+            <label for="p-shadow">Box Shadow</label>
+          </div>
+        </div>
+      </section>
+
+      <section id="duration">
+        <h2>Duration</h2>
+        <div class="button-group">
+          <div class="radios">
+            <input
+              type="radio"
+              name="duration"
+              id="du-zero"
+              onclick="classSet('duration',1)"
+            />
+            <label for="du-zero">0 Seconds</label><br />
+            <input
+              type="radio"
+              name="duration"
+              id="du-half"
+              onclick="classSet('duration',2)"
+            />
+            <label for="du-half">0.5 Seconds</label><br />
+            <input
+              type="radio"
+              name="duration"
+              id="du-one"
+              onclick="classSet('duration',3)"
+              checked
+            />
+            <label for="du-one">1 Second</label><br />
+            <input
+              type="radio"
+              name="duration"
+              id="du-two"
+              onclick="classSet('duration',4)"
+            />
+            <label for="du-two">2 Seconds</label>
+          </div>
+        </div>
+      </section>
+
+      <section id="timing">
+        <h2>Timing-function</h2>
+        <div class="button-group">
+          <div class="radios">
+            <input
+              type="radio"
+              name="timing"
+              id="t-linear"
+              onClick="classSet('timing',1)"
+            />
+            <label for="t-linear">Linear</label><br />
+            <input
+              type="radio"
+              name="timing"
+              id="t-ease"
+              onClick="classSet('timing',2)"
+              checked
+            />
+            <label for="t-ease">Ease</label><br />
+            <input
+              type="radio"
+              name="timing"
+              id="t-bezier"
+              onClick="classSet('timing',3)"
+            />
+            <label for="t-bezier">Bezier</label><br />
+            <input
+              type="radio"
+              name="timing"
+              id="t-steps"
+              onClick="classSet('timing',4)"
+            />
+            <label for="t-steps">Steps</label>
+          </div>
+        </div>
+      </section>
+
+      <section id="delay">
+        <h2>Delay</h2>
+        <div class="button-group">
+          <div class="radios">
+            <input
+              type="radio"
+              name="delay"
+              id="dl-zero"
+              onclick="classSet('delay',1)"
+              checked
+            />
+            <label for="dl-zero">0 Seconds</label><br />
+            <input
+              type="radio"
+              name="delay"
+              id="dl-half"
+              onclick="classSet('delay',2)"
+            />
+            <label for="dl-half">0.5 Seconds</label><br />
+            <input
+              type="radio"
+              name="delay"
+              id="dl-one"
+              onclick="classSet('delay',3)"
+            />
+            <label for="dl-one">1 Second</label><br />
+            <input
+              type="radio"
+              name="delay"
+              id="dl-two"
+              onclick="classSet('delay',4)"
+            />
+            <label for="dl-two">2 Seconds</label>
+          </div>
+        </div>
+      </section>
+      <input type="button" value="Go" onClick="clickedToggle()" />
+      <section
+        id="demonstration"
+        class="property-1 duration-3 timing-2 delay-1"
+      >
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, id
+          accusamus inventore aliquid soluta, consectetur odio temporibus eaque
+          suscipit explicabo aut tenetur recusandae iste autem quaerat. Illo et
+          eveniet itaque eius quia impedit iste earum quasi delectus sit
+          repellendus iusto temporibus blanditiis labore dolores harum,
+          perspiciatis assumenda atque hic culpa quibusdam quisquam minus dicta
+          ullam. Distinctio ea, rem veniam saepe nulla alias error quidem odit
+          maxime fugiat obcaecati sequi placeat illo! Est totam quidem magni
+          expedita odit quas quae libero accusamus mollitia, aspernatur placeat
+          pariatur quibusdam praesentium dignissimos natus voluptatum vero
+          nostrum, quasi ad a reprehenderit, iure qui cum consequuntur. At
+          veritatis harum natus repellendus soluta. Distinctio impedit autem,
+          numquam possimus iusto tenetur eligendi. Expedita labore porro saepe
+          provident ut tenetur dignissimos quas incidunt sequi excepturi
+          consequuntur recusandae quaerat, eius soluta numquam debitis vero
+          facere sunt nisi. Assumenda voluptates consequuntur nihil temporibus
+          perspiciatis officia dolor nam saepe, necessitatibus laboriosam
+          dolorem sed id quidem possimus deleniti minima optio odio facere, quo
+          eos accusantium inventore ducimus alias totam! Veniam officiis odio
+          reiciendis atque officia quos quia asperiores possimus cum! Saepe,
+          quam? Debitis culpa non at dolor vitae, hic dignissimos beatae vel
+          vero fugiat rerum! Possimus perferendis nostrum accusamus assumenda,
+          doloribus ipsa quaerat.
+        </p>
+      </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  background: #ddd;
+  color: #222;
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: "Aller", sans-serif;
+}
+
+header {
+  text-align: center;
+  background: #222;
+  color: white;
+  border-bottom: 5px solid #63d297;
+  border-top: 1px solid transparent;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+header h1 {
+  margin: 20px;
+  font-weight: 200;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+section {
+  height: 400px;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+section#color {
+  background-color: white;
+  box-shadow: -5px 5px 0 #63d297;
+  color: #222;
+}
+
+section#color,
+section#color h2,
+section#color p.second {
+  transition: background-color 1s, color 1s, box-shadow 1s;
+}
+
+section#color h2,
+section#color p.second {
+  text-align: center;
+  color: #080;
+}
+
+section#color p.second {
+  font-size: 20px;
+}
+
+section#color.clicked {
+  background-color: #222;
+  color: white;
+  box-shadow: -5px 5px dodgerblue;
+}
+
+section#color.clicked h2,
+section#color.clicked p.second {
+  color: #acf;
+}
+
+section#font-size {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #222;
+  font-family: "Aller", sans-serif;
+  font-weight: bold;
+}
+
+section#font-size p {
+  transition: font-size 1s;
+  font-size: 25px;
+}
+
+section#font-size.clicked p.makebig {
+  font-size: 40px;
+}
+
+section#font-size.clicked p.makesmall {
+  font-size: 10px;
+}
+
+section#transform {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section#transform img {
+  width: 300px;
+  height: 200px;
+  transition: transform 1s;
+}
+
+section#transform.clicked img {
+  transform: rotate(90deg) scale(0.5, 2);
+}
+
+section#height-width {
+  display: flex;
+  justify-content: center;
+}
+
+section#height-width p {
+  background: #fff;
+  box-shadow: -5px 5px 0 #63d297;
+  padding: 10px;
+  width: 200px;
+  height: 350px;
+  transition: height 1s .25s, width 1s;
+}
+
+section#height-width.clicked p {
+  width: 350px;
+  height: 175px;
+}
+
+footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+footer input[type=button] {
+  font-size: 25px;
+}

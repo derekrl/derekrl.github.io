@@ -1,0 +1,126 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  background: #ddd;
+  color: #222;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: "Aller", sans-serif;
+}
+
+header {
+  text-align: center;
+  background: #222;
+  color: white;
+  border-bottom: 5px solid #63d297;
+  border-top: 1px solid transparent;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+header h1 {
+  margin: 20px;
+  font-weight: 200;
+}
+
+main {
+  margin: 0 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  height: auto;
+}
+
+section {
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.button-group {
+  display: grid;
+  height: 7em;
+}
+
+.radios {
+  vertical-align: center;
+}
+
+input[type="button"] {
+  align-self: center;
+  grid-column: 5/6;
+  width: 10em;
+  height: 5em;
+  font-size: 16px;
+}
+
+#demonstration {
+  grid-column: 1/-1;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#demonstration p {
+  box-shadow: -5px 5px 0 #63d297;
+  background: #eee;
+  padding: 10px;
+  width: 700px;
+}
+
+#demonstration p {
+  transition-property: all;
+}
+#demonstration.property-1.clicked p {
+  color: white;
+  background: #222;
+}
+#demonstration.property-2.clicked p {
+  width: 400px;
+}
+#demonstration.property-3.clicked p {
+  font-size: 20px;
+}
+#demonstration.property-4.clicked p {
+  box-shadow: 0 0 10px 5px magenta;
+}
+
+#demonstration.duration-1 p {
+  transition-duration: 0s;
+}
+#demonstration.duration-2 p {
+  transition-duration: .5s;
+}
+#demonstration.duration-3 p {
+  transition-duration: 1s;
+}
+#demonstration.duration-4 p {
+  transition-duration: 2s;
+}
+
+#demonstration.timing-1 p {
+  transition-timing-function: linear;
+}
+#demonstration.timing-2 p {
+  transition-timing-function: ease;
+}
+#demonstration.timing-3 p {
+  transition-timing-function: cubic-bezier(.5,1,1,0);
+}
+#demonstration.timing-4 p {
+  transition-timing-function: steps(6, end);
+}
+
+#demonstration.delay-1 p {
+  transition-delay: 0s;
+}
+#demonstration.delay-2 p {
+  transition-delay: .5s;
+}
+#demonstration.delay-3 p {
+  transition-delay: 1s;
+}
+#demonstration.delay-4 p {
+  transition-delay: 2s;
+}
