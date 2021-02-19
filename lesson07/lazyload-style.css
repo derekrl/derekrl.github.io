@@ -1,0 +1,14 @@
+body {
+  background-color: #aaa;
+}
+
+img {
+  display: block;
+  margin: 20px;
+  filter: blur(0);
+  transition: filter .5s;
+}
+
+img[data-src] {
+  filter: blur(10px);
+}
