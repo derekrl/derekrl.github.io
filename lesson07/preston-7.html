@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather for Preston, Idaho</title>
+    <meta
+      name="description"
+      content="Preston Idaho current weather, 5-day forecast, and everything else you need to know"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <!-- Replaced by web font loader js
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oswald:wght@200;400&display=swap"
+      rel="stylesheet"
+    /> 
+    -->
+  </head>
+  <body>
+    <section id="currentevent">
+      <p>
+        Saturday = Preston Pancakes in the Park!<br />
+        9:00 a.m. Saturday at the city park pavilion.
+      </p>
+    </section>
+    <header>
+      <img src="images/weather-logo.svg" alt="Site logo" />
+      <section class="headers">
+        <h1>Tri-City Weather</h1>
+        <div><p>What you need to know</p></div>
+      </section>
+    </header>
+    <nav>
+      <button onclick="navMenu()">&equiv; Menu</button>
+      <ul id="nav-menu" class="hidden">
+        <li><a href="#">Home</a></li>
+        <li class="current"><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="gallery-7.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main id="city-page">
+      <h1>Preston, Idaho</h1>
+      <section id="hero">
+        <!-- <img src="images/hero-placeholder.jpg" alt="Decorative landscape image" /> -->
+        <picture>
+          <source
+            srcset="images/hero-768.jpg"
+            media="(min-width: 520px) and (max-width: 1023px)"
+          />
+          <source srcset="images/hero-832.jpg" media="(min-width: 1024px)" />
+          <img src="images/hero-507.jpg" alt="Sky" />
+        </picture>
+        <section id="summary">
+          <h2>Summary</h2>
+          <section>
+            <p class="titles">
+              Currently:<br />
+              High:<br />
+              Wind Chill:<br />
+              Humidity:<br />
+              Wind Speed:<br />
+            </p>
+            <p class="data">
+              <span id="sum-condition">Sunny</span>
+              <br />
+              <span id="sum-high">62</span> &deg;F
+              <br />
+              <span id="sum-windchill">##</span><span> &deg;F</span>
+              <br />
+              <span id="sum-humid">43</span>%
+              <br />
+              <span id="sum-wind">5</span> mph
+              <br />
+            </p>
+          </section>
+        </section>
+      </section>
+      <section id="fiveday">
+        <h2>5-Day Forecast</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  src="images/status/weather-clear.png"
+                  alt="Clear weather"
+                /><br /><span>60 &deg;F</span>
+              </td>
+              <td>
+                <img
+                  src="images/status/weather-few-clouds.png"
+                  alt="Cloudy weather"
+                /><br /><span>50 &deg;F</span>
+              </td>
+              <td>
+                <img
+                  src="images/status/weather-overcast.png"
+                  alt="Overcast weather"
+                /><br /><span>40 &deg;F</span>
+              </td>
+              <td>
+                <img
+                  src="images/status/weather-snow.png"
+                  alt="Snowy weather"
+                /><br /><span>30 &deg;F</span>
+              </td>
+              <td>
+                <img
+                  src="images/status/weather-few-clouds.png"
+                  alt="Cloudy weather"
+                /><br /><span>50 &deg;F</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="article">
+        <h2>Article Title</h2>
+        <img
+          src="images/article-placeholder.jpg"
+          alt="Man standing with bike"
+        />
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
+          voluptatem sed distinctio autem. Iste cumque adipisci qui asperiores
+          sapiente earum, provident dolores pariatur consequatur distinctio
+          impedit corrupti a autem doloribus libero, voluptate ratione ipsam.
+          Ipsam aspernatur tempora necessitatibus id excepturi perferendis
+          ipsum. Harum placeat in odio veritatis earum cupiditate possimus
+          temporibus ducimus ut animi, aperiam nobis enim nam nihil, omnis minus
+          quis? Enim atque aperiam tenetur ex quae vel ab pariatur! Expedita
+          debitis esse eius cupiditate inventore praesentium ipsa, deserunt
+          incidunt? Ut porro optio excepturi perspiciatis dolores rem alias,
+          fuga beatae odit, placeat iste aliquam culpa sequi eligendi nesciunt
+          vero vitae facilis expedita cupiditate soluta similique dolorum quasi
+          quia saepe. Error accusamus facere libero aperiam, ipsam recusandae.
+          Veritatis quod aliquid sequi, ad natus, ipsa alias, eius explicabo
+          necessitatibus repellat incidunt quo temporibus! Laborum eius
+          temporibus obcaecati possimus. Modi animi ipsa sunt sit reiciendis
+          eveniet possimus accusantium ipsam, aliquam exercitationem amet
+          repellat ex veniam molestias voluptates quod minus alias fugit
+          dolores. Incidunt dolor sequi perspiciatis ex deserunt fugit quod,
+          consequuntur, numquam suscipit tempore voluptates ea eaque totam
+          excepturi minima ab vitae facere nostrum? Nihil aliquam dolore esse
+          enim repellendus iure aut reprehenderit. Eius veritatis fugiat ad modi
+          libero eveniet obcaecati delectus harum ex architecto error maxime at
+          minima tempore facere, nisi labore sapiente neque ut impedit,
+          voluptate soluta? Architecto neque ipsam enim tempora aut. Quidem
+          voluptatem repudiandae obcaecati officiis labore odio. Fugiat porro
+          amet qui dolorem corrupti ipsum harum reiciendis asperiores in eius
+          ad, rerum quibusdam consectetur incidunt numquam doloremque optio
+          architecto expedita perspiciatis nulla ea odio nam autem. Laboriosam
+          magni quos neque, inventore, porro tempora eius iusto aperiam beatae
+          obcaecati aliquid aliquam aspernatur fugiat perferendis praesentium
+          dolorum omnis repellendus tempore voluptates reiciendis veniam
+          explicabo dolores. Quia cupiditate asperiores, aut earum ullam
+          pariatur soluta, impedit id quo nihil, ipsa fugiat voluptatem?
+        </p>
+      </section>
+      <section id="contact">
+        <h2>Contact Information</h2>
+        <div class="flexwrapper">
+          <img src="images/map-placeholder.jpg" alt="Map" />
+          <section>
+            <p>
+              <b>Tri-City Weather</b><br />
+              <img src="images/social/location.svg" alt="Location" />
+              30 N 1st E<br />
+              Preston, ID 83263
+            </p>
+            <p>
+              <img src="images/social/phone.svg" alt="Phone" />(555) 555-5555<br />
+              <img
+                src="images/social/email.svg"
+                alt="Email"
+              />contact@<wbr />thetricityweather.com
+            </p>
+            <p>
+              <a href="https://facebook.com"
+                ><img src="images/social/facebook.svg" alt="Facebook"
+              /></a>
+              <a href="https://twitter.com"
+                ><img src="images/social/twitter.svg" alt="Twitter"
+              /></a>
+            </p>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; Tri-City Weather | Derek Long<br />
+        <span id="current-date"></span>
+      </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/webfont.js"></script>
+    <script src="js/windchill.js"></script>
+  </body>
+</html>
