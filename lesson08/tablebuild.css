@@ -1,0 +1,52 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+table {
+  box-shadow: 10px 10px 10px #628CA6;
+  border-collapse: collapse;
+}
+
+tr:nth-child(2n) {
+  background: #E7F0ED;
+}
+
+tr:nth-child(2n+1) {
+  background: #E7FFED;
+}
+
+thead td {
+  background: #7FB9C2;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+td {
+  border: 1px solid #bbbbbb;
+  text-align: center;
+  padding: 7px 10px;
+}
+
+tbody tr:nth-child(1) td {
+  background: #628CA6;
+  font-weight: 700;
+  color: white;
+}
+
+tbody tr:nth-child(6) td:nth-child(1) {
+  font-style: italic;
+}
+
+tbody tr:nth-child(5) td:nth-child(3) {
+  background: #628CA6;
+  font-weight: 400;
+  color: white;
+}
+/* there, no classes used. this feels so wrong */
+
+tfoot td {
+  font-size: 12px;
+  background: #7FB9C2;
+}
