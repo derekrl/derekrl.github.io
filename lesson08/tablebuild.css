@@ -18,16 +18,16 @@ tr:nth-child(2n+1) {
   background: #E7FFED;
 }
 
-thead td {
-  background: #7FB9C2;
-  font-size: 24px;
-  font-weight: 700;
-}
-
 td {
   border: 1px solid #bbbbbb;
   text-align: center;
   padding: 7px 10px;
+}
+
+thead td {
+  background: #7FB9C2;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 tbody tr:nth-child(1) td {
