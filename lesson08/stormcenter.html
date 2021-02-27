@@ -44,7 +44,7 @@
           <label class="above"
             >Full Name*<input
               type="text"
-              name="fname"
+              name="name"
               pattern="[a-zA-Z\s]{5,}"
               required
           /></label>
@@ -56,20 +56,16 @@
             >Phone Number* <input type="tel" name="tel" required
           /></label>
           <label class="above"
-            >Zip Code*
-            <input
-              type="number"
-              name="zipcode"
-              required
+            >Zip Code* <input type="number" name="zipcode" required
           /></label>
         </fieldset>
         <fieldset>
           <legend>Storm Information</legend>
           <label class="above"
-            >Storm Date <input type="date" name="sdate"
+            >Storm Date <input type="date" name="date"
           /></label>
           <label class="above"
-            >Storm Type <input list="storm-type" name="stype"
+            >Storm Type <input list="storm-type" name="type"
           /></label>
           <datalist id="storm-type">
             <option value="flashflood">Flash Flood</option>
@@ -82,7 +78,7 @@
             >Storm Severity: <span id="severity-rating">5</span>
             <input
               type="range"
-              name="sseverity"
+              name="severity"
               value="5"
               min="1"
               max="10"
@@ -92,7 +88,7 @@
           /></label>
           <label class="above"
             >Storm Region
-            <select name="sregion">
+            <select name="region">
               <option>Select region...</option>
               <option value="preston">Preston</option>
               <option value="sodasprings">Soda Springs</option>
@@ -102,13 +98,13 @@
 
           <div>Are you in danger?</div>
           <label class="side"
-            ><input type="radio" name="danger" value="yes" /> Yes</label
+            ><input type="radio" name="danger" value="yes" />&nbsp;Yes</label
           >
           <label class="side"
-            ><input type="radio" name="danger" value="maybe" /> Maybe</label
+            ><input type="radio" name="danger" value="maybe" />&nbsp;Maybe</label
           >
           <label class="side"
-            ><input type="radio" name="danger" value="No" /> No</label
+            ><input type="radio" name="danger" value="No" />&nbsp;No</label
           >
           <label class="above"
             >Additional information or comments
