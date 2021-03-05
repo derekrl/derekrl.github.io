@@ -1,7 +1,16 @@
+WebFont.load({
+  google: {
+    families: ["Lato"],
+  },
+  typekit: {
+    families: ["Aller"],
+  },
+});
+
 const requestURL =
   "https://byui-cit230.github.io/canvas-referenced/latter-day-prophets.json";
-  
-  fetch(requestURL)
+
+fetch(requestURL)
   .then(function (response) {
     return response.json();
   })
@@ -15,11 +24,18 @@ const requestURL =
       let pp = document.createElement("p");
       let image = document.createElement("img");
 
-      h2.textContent = prophets[i].name + " " + prophets[i].lastname
+      h2.textContent = prophets[i].name + " " + prophets[i].lastname;
       pd.textContent = "Date of Birth: " + prophets[i].birthdate;
       pp.textContent = "Place of Birth: " + prophets[i].birthplace;
-      image.setAttribute('src', prophets[i].imageurl)
-      image.setAttribute('alt', prophets[i].name + " " + prophets[i].lastname + " - " + prophets[i].order)
+      image.setAttribute("src", prophets[i].imageurl);
+      image.setAttribute(
+        "alt",
+        prophets[i].name +
+          " " +
+          prophets[i].lastname +
+          " - " +
+          prophets[i].order
+      );
 
       card.appendChild(h2);
       card.appendChild(pd);
