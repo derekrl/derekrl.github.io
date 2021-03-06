@@ -41,5 +41,17 @@ fetch(requestURL)
 
       document.querySelector("div.cards").appendChild(card);
     });
-    
+
+    /*
+    const utahfilter = prophets.filter(prophet => prophet.birthplace == "Utah");
+    utahfilter.forEach(utahprophet => {
+      let card = document.createElement("section");
+      let h2 = document.createElement("h2");
+      h2.textContent = `${utahprophet.name} ${utahprophet.lastname}`;
+      card.appendChild(h2);
+      document.querySelector("div#filtered").appendChild(card);
+      //etc
+    });
+    */
+
   });
