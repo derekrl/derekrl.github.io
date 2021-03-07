@@ -129,14 +129,14 @@ main h2 {
 
 main > section {
   background-color: #fff;
-  /* border: 2px dotted #999; */
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   padding-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 main section h1,
 main section h2 {
-  padding: 0.5em;
+  padding: 0.5em 0 0 0;
 }
 
 main section p {
@@ -149,6 +149,10 @@ section#currentevent {
 
 section#currentevent.friday {
   display: block;
+}
+
+body#home-page main section#hero {
+  padding-bottom: 0;
 }
 
 section#hero img {
@@ -176,6 +180,32 @@ section#summary section p.titles {
 
 section#summary section p.data {
   text-align: left;
+}
+
+div#cities section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1em;
+}
+
+div#cities section h2 {
+  margin: 0 .5em .5em .5em;
+}
+
+div#cities section p.motto {
+  margin-bottom: 1em;
+  color: hsl(210, 50%, 30%);
+  font-style: italic;
+}
+
+div#cities section img {
+  max-width: 100%;
+  vertical-align: top;
 }
 
 section#fiveday table {
@@ -276,6 +306,10 @@ form input.submit {
 
 section#thanks p {
   padding-top: 1em;
+}
+
+section#contact {
+  margin-bottom: 0;
 }
 
 section#contact .flexwrapper {

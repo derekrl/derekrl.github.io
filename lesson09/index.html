@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery Page - Tri-City Weather</title>
+    <title>Tri-City Weather</title>
     <meta
       name="description"
-      content="User-submitted photos of interesting weather from the tri-city area"
+      content="Weather and Community information for Preston, Soda Springs, and Fish Haven, Idaho"
     />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/normalize.css" />
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
   </head>
-  <body id="gallery-page">
+  <body id="home-page">
     <header>
       <img src="images/weather-logo.svg" alt="Site logo" />
       <section class="headers">
@@ -25,54 +25,46 @@
     <nav>
       <button onclick="navMenu()">&equiv; Menu</button>
       <ul id="nav-menu" class="hidden">
-        <li><a href="index.html">Home</a></li>
+        <li class="current"><a href="#">Home</a></li>
         <li><a href="preston.html">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
         <li><a href="stormcenter.html">Storm Center</a></li>
-        <li class="current"><a href="#">Gallery</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
       </ul>
     </nav>
     <main>
-      <h1>Image Gallery</h1>
-      <section id="gallery">
-        <figure>
-          <img src="images/gallery/placeholder.jpg" data-src="images/gallery/blue-skies.jpg" alt="Blue Skies">
-          <figcaption>Blue Skies</figcaption>
-        </figure>
-        <figure>
-          <img src="images/gallery/placeholder.jpg" data-src="images/gallery/breaking-clouds.jpg" alt="Breaking Clouds">
-          <figcaption>Breaking Clouds</figcaption>
-        </figure>
-        <figure>
-          <img src="images/gallery/placeholder.jpg" data-src="images/gallery/field-rainbow.jpg" alt="Rainbow over grassy field">
-          <figcaption>Rainbow over grassy field</figcaption>
-        </figure>
-        <figure>
-          <img src="images/gallery/placeholder.jpg" data-src="images/gallery/forest-fog.jpg" alt="Fog in the forest">
-          <figcaption>Fog in the forest</figcaption>
-        </figure>
-        <figure>
-          <img src="images/gallery/placeholder.jpg" data-src="images/gallery/forest-sunset.jpg" alt="Sunset in the forest">
-          <figcaption>Sunset in the forest</figcaption>
-        </figure>
-        <figure>
-          <img src="images/gallery/placeholder.jpg" data-src="images/gallery/overcast.jpg" alt="Overcast skies">
-          <figcaption>Overcast skies</figcaption>
-        </figure>
-        <figure>
-          <img src="images/gallery/placeholder.jpg" data-src="images/gallery/rain-on-ground.jpg" alt="Heavy rain falling on the ground">
-          <figcaption>Heavy rain falling on the ground</figcaption>
-        </figure>
-        <figure>
-          <img src="images/gallery/placeholder.jpg" data-src="images/gallery/thunderstorm.jpg" alt="Thunderstorm over the airport">
-          <figcaption>Thunderstorm over the airport</figcaption>
-        </figure>
-        <figure>
-          <img src="images/gallery/placeholder.jpg" data-src="images/gallery/trees-snow.jpg" alt="Park path on a snowy day">
-          <figcaption>Park path on a snowy day</figcaption>
-        </figure>
+      <h1>Home Page</h1>
+      <section id="hero">
+        <!-- <img src="images/hero-placeholder.jpg" alt="Decorative landscape image" /> -->
+        <picture>
+          <source
+            srcset="images/hero-768.jpg"
+            media="(min-width: 520px) and (max-width: 1023px)"
+          />
+          <source srcset="images/hero-832.jpg" media="(min-width: 1024px)" />
+          <img src="images/hero-507.jpg" alt="Sky" />
+        </picture>
       </section>
+
+      <section id="event">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+          quisquam soluta earum doloremque, sint fuga voluptate non optio
+          possimus, laudantium nobis suscipit perspiciatis quis. Fugiat, placeat
+          autem labore, a voluptate nisi iure quae ducimus consequuntur
+          veritatis nesciunt, hic nostrum alias. Vero velit natus atque qui
+          tenetur ut esse molestiae veniam?
+        </p>
+      </section>
+
+      <div id="cities">
+        <section id="preston"></section>
+        <section id="soda-springs"></section>
+        <section id="fish-haven"></section>
+      </div>
+
       <section id="contact">
         <h2>Contact Information</h2>
         <div class="flexwrapper">
@@ -112,6 +104,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/script.js"></script>
     <script src="js/webfont.js"></script>
+    <script src="js/home.js"></script>
     <script src="js/lazyload.js"></script>
   </body>
 </html>

@@ -16,7 +16,7 @@
     margin: auto;
   }
 
-  main#gallery-page {
+  body#gallery-page main {
     max-width: 76em;
   }
 
@@ -25,7 +25,7 @@
     margin: auto;
   }
 
-  main#gallery-page + footer {
+  body#gallery-page main + footer {
     max-width: 78em;
   }
 
@@ -59,6 +59,32 @@
   section#summary {
     bottom: 2em;
     left: 2em;
+  }
+
+  div#cities {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+  }
+
+  div#cities section,
+  div#cities section:nth-child(even) {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  div#cities section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-bottom: 0;
+  }
+
+  div#cities section img {
+    max-width: 100%;
+    height: auto;
   }
 
   section#gallery {
