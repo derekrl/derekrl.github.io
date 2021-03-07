@@ -182,7 +182,7 @@ section#summary section p.data {
   text-align: left;
 }
 
-div#cities section {
+div#towns section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -193,17 +193,17 @@ div#cities section {
   margin-bottom: 1em;
 }
 
-div#cities section h2 {
+div#towns section h2 {
   margin: 0 .5em .5em .5em;
 }
 
-div#cities section p.motto {
+div#towns section p.motto {
   margin-bottom: 1em;
   color: hsl(210, 50%, 30%);
   font-style: italic;
 }
 
-div#cities section img {
+div#towns section img {
   max-width: 100%;
   vertical-align: top;
 }
