@@ -212,6 +212,10 @@ section#fiveday table {
   margin: 0 auto;
 }
 
+section#fiveday table img {
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.25));
+}
+
 section#article img {
   max-width: 100%;
 }
