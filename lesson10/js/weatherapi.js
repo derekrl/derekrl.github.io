@@ -1,7 +1,7 @@
 const apiURLCurrent =
-  "http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=c52a08839dea168bd8ac1f197c2f6a78&units=imperial";
+  "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=c52a08839dea168bd8ac1f197c2f6a78&units=imperial";
 const apiURLForecast =
-  "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=c52a08839dea168bd8ac1f197c2f6a78&units=imperial";
+  "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=c52a08839dea168bd8ac1f197c2f6a78&units=imperial";
 // expansion for other city pages: pass parameter to function, switch statement to get city ID
 
 fetch(apiURLCurrent)
