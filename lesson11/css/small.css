@@ -1,0 +1,337 @@
+body {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  line-height: 1.25;
+  background-color: hsl(230, 25%, 90%);
+}
+
+header,
+nav,
+main,
+footer {
+  width: 100%;
+}
+
+header,
+footer {
+  background-color: hsl(210, 50%, 30%);
+  color: white;
+  text-align: center;
+  padding: 0.25rem 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+h1,
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+
+section#currentevent p {
+  background: hsl(40, 80%, 70%);
+  margin: 0 auto;
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+header p {
+  margin-top: -1em;
+}
+
+header h1 {
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.75);
+}
+
+header p {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+header img {
+  width: 90px;
+  height: auto;
+}
+
+header .headings {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: hsl(40, 80%, 30%);
+}
+
+footer a {
+  color: hsl(40, 80%, 70%);
+}
+
+nav {
+  background: hsl(40, 80%, 70%);
+  width: 100%;
+  text-align: center;
+}
+
+nav button {
+  border: none;
+  background: none;
+  color: black;
+  font-weight: bold;
+  padding: 1em 0;
+  width: 100%;
+}
+
+nav ul.hidden {
+  display: none;
+}
+
+nav ul {
+  padding-left: 0;
+  margin: auto;
+  border-top: 2px solid hsl(40, 80%, 30%);
+}
+
+nav ul li {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li.current a {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.5rem;
+  color: black;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  font-weight: bold;
+}
+
+main {
+  /* background-color: white; */
+  text-align: center;
+}
+
+main h1,
+main h2 {
+  color: hsl(210, 50%, 30%);
+}
+
+main > section {
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+main section h1,
+main section h2 {
+  padding: 0.5em 0 0 0;
+}
+
+main section p {
+  margin: 0 0.5em;
+}
+
+section#currentevent {
+  display: none;
+}
+
+section#currentevent.friday {
+  display: block;
+}
+
+body#home-page main section#hero {
+  padding-bottom: 0;
+}
+
+section#hero img {
+  width: 100%;
+  vertical-align: top;
+}
+
+section#summary h2 {
+  padding: initial;
+}
+
+section#summary section {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+}
+
+section#summary section p {
+  margin: 0 0.25em;
+}
+
+section#summary section p.titles {
+  text-align: right;
+}
+
+section#summary section p.data {
+  text-align: left;
+}
+
+div#towns section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1em;
+}
+
+div#towns section h2 {
+  margin: 0 .5em .5em .5em;
+}
+
+div#towns section p.motto {
+  margin-bottom: 1em;
+  color: hsl(210, 50%, 30%);
+  font-style: italic;
+}
+
+div#towns section img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+section#fiveday table {
+  margin: 0 auto;
+}
+
+section#fiveday table img {
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.25));
+}
+
+section#article img {
+  max-width: 100%;
+}
+
+section#gallery {
+  background-color: transparent;
+  box-shadow: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+}
+
+section#gallery figure {
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+section#gallery figure img {
+  max-width: 100%;
+  vertical-align: top; /* remove padding below image */
+  filter: blur(0);
+  transition: filter 0.5s;
+}
+
+section#gallery figure img[data-src] {
+  filter: blur(4px);
+}
+
+section#gallery figure figcaption {
+  margin: 0.5em;
+}
+
+form {
+  text-align: left;
+}
+
+form fieldset {
+  background-color: #fff;
+  margin: 0.5em 0;
+  border: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  position: relative;
+  padding-top: 2.5em;
+}
+
+form fieldset legend {
+  background-color: white;
+  padding: 0 0.25em;
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+  color: hsl(210, 50%, 30%);
+  position: absolute;
+  top: .5em;
+  left: .5em;
+}
+
+form label.above,
+form div {
+  display: block;
+  margin-top: 1em;
+}
+
+form label.above input,
+form label.above select,
+form label.above textarea {
+  display: block;
+  width: 100%;
+  max-width: 20em;
+  padding: 0.5em;
+}
+
+form label.side {
+  display: block;
+  padding: 0.5em 0;
+}
+
+form input:required,
+form select:required {
+  box-shadow: 0 2px 0 #f66151;
+}
+
+form input:required:valid {
+  box-shadow: 0 2px #33d17a;
+}
+
+form input.submit {
+  width: 100%;
+  max-width: 20em;
+  padding: 0.5em;
+}
+
+section#thanks p {
+  padding-top: 1em;
+}
+
+section#contact {
+  margin-bottom: 0;
+}
+
+section#contact .flexwrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+section#contact p {
+  text-align: left;
+  line-height: 1.5;
+  margin: 0.5em;
+}
+
+section#contact p img {
+  vertical-align: middle;
+  margin-right: 0.25em;
+  height: 1.25em;
+  width: auto;
+}
