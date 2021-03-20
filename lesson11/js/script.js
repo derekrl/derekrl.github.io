@@ -3,8 +3,8 @@ let currentDate = new Date()
 // current event banner
 currentWeekDay = currentDate.getDay()
 banner = document.getElementById("currentevent")
-if (currentWeekDay == 5) {
-  banner.classList.add("friday")
+if (currentWeekDay == 6) {
+  banner.classList.add("saturday")
 }
 
 // nav

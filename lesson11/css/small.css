@@ -147,7 +147,7 @@ section#currentevent {
   display: none;
 }
 
-section#currentevent.friday {
+section#currentevent.saturday {
   display: block;
 }
 
@@ -214,6 +214,10 @@ section#fiveday table {
 
 section#fiveday table img {
   filter: drop-shadow(0 1px 1px rgba(0,0,0,0.25));
+}
+
+section#article p {
+  text-align: left;
 }
 
 section#article img {

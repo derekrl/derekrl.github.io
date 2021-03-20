@@ -1,13 +1,23 @@
-const apiURLCurrent =
-  "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=c52a08839dea168bd8ac1f197c2f6a78&units=imperial";
-const apiURLForecast =
-  "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=c52a08839dea168bd8ac1f197c2f6a78&units=imperial";
-// expansion for other city pages: pass parameter to function, switch statement to get city ID
+let citykey = "";
+switch (document.body.dataset.city) {
+  case "preston":
+    citykey = "5604473";
+    break;
+  case "soda-springs":
+    citykey = "5607916";
+    break;
+  case "fish-haven":
+    citykey = "5585010";
+    break;
+}
+
+const apikey = "c52a08839dea168bd8ac1f197c2f6a78";
+const apiURLCurrent = `https://api.openweathermap.org/data/2.5/weather?id=${citykey}&appid=${apikey}&units=imperial`;
+const apiURLForecast = `https://api.openweathermap.org/data/2.5/forecast?id=${citykey}&appid=${apikey}&units=imperial`;
 
 fetch(apiURLCurrent)
   .then((response) => response.json())
   .then((jsObject) => {
- 
     let curTemp = jsObject.main.temp;
     let curWind = jsObject.wind.speed;
 
@@ -45,7 +55,7 @@ fetch(apiURLForecast)
 
     for (let i = 0; i < 5; i++) {
       let day = forecast[i];
-      
+
       let date = new Date(day.dt_txt);
       let weekday = weekdays[date.getDay()];
       document.querySelector(

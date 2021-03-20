@@ -87,6 +87,10 @@
     height: auto;
   }
 
+  section#article img {
+    max-width: 33%;
+  }
+
   section#gallery {
     grid-template-columns: 1fr 1fr 1fr;
   }
