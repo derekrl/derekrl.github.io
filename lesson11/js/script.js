@@ -1,10 +1,12 @@
 let currentDate = new Date()
 
 // current event banner
-currentWeekDay = currentDate.getDay()
-banner = document.getElementById("currentevent")
-if (currentWeekDay == 6) {
-  banner.classList.add("saturday")
+if (document.body.dataset.city != null) {
+  currentWeekDay = currentDate.getDay()
+  banner = document.getElementById("currentevent")
+  if (currentWeekDay == 6) {
+    banner.classList.add("saturday")
+  }
 }
 
 // nav
