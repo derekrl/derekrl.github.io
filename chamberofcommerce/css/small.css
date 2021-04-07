@@ -186,8 +186,6 @@ section.col-w a {
   color: var(--blue-3);
 }
 
-section.col-g a,
-section.col-o a,
 section.col-x a {
   color: var(--blue-1);
 }
