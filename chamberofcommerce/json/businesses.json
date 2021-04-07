@@ -1,0 +1,67 @@
+{
+  "businesses": [
+    {
+      "name": "7-Eleven",
+      "address": "2291 N University Pkwy",
+      "tel": "(385) 208-3399",
+      "weblink": "https://www.7-eleven.com/locations/ut/provo/2291-n-university-pkwy-41191/",
+      "logo": "7-eleven.png"
+    },
+    {
+      "name": "Famous Dave's Express",
+      "address": "1280 N University Ave",
+      "tel": "(801) 607-1249",
+      "weblink": "http://www.famousdaves.com/Provo/",
+      "logo": "famous-daves.png"
+    },
+    {
+      "name": "Subway",
+      "address": "148 W 1230 N",
+      "tel": "(801) 356-9002",
+      "weblink": "https://restaurants.subway.com/united-states/ut/provo/148-west-1230-north/",
+      "logo": "subway.png"
+    },
+    {
+      "name": "Residence Inn by Marriott",
+      "address": "1290 S University Ave",
+      "tel": "(801) 734-9740",
+      "weblink": "https://www.marriott.com/hotels/travel/slcrp-residence-inn-provo-south-university/",
+      "logo": "residence-inn.png"
+    },
+    {
+      "name": "Dr. Thomas Tervort, DNP, NP-C",
+      "address": "1055 N 300 W",
+      "tel": "(801) 616-3675",
+      "weblink": "https://neuraleffects.com/",
+      "logo": "neural-effects.png"
+    },
+    {
+      "name": "Dollar Loan Center",
+      "address": "1326 S University Ave",
+      "tel": "(801) 851-5452",
+      "weblink": "https://www.dontbebroke.com/locations/1326-s-university-ave-provo/",
+      "logo": "dollar-loan-center.png"
+    },
+    {
+      "name": "Clegg Auto Provo",
+      "address": "546 Freedom Blvd 200 W",
+      "tel": "(801) 374-8708",
+      "weblink": "https://www.cleggautoprovo.com/",
+      "logo": "clegg-auto.png"
+    },
+    {
+      "name": "Bartlett Title Insurance Agency, Inc.",
+      "address": "1993 N State St",
+      "tel": "(801) 377-1181",
+      "weblink": "https://bartletttitle.com/",
+      "logo": "bartlett-title.png"
+    },
+    {
+      "name": "Stonehaven Dental",
+      "address": "1355 N University Ave, Ste 330",
+      "tel": "(801) 377-6453",
+      "weblink": "https://stonehavendental.com/location/provo/",
+      "logo": "stonehaven-dental.png"
+    }
+  ]
+}

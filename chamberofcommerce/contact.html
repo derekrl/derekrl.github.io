@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Provo Chamber of Commerce</title>
+  <meta name="description" content="~155 characters summarizing with keywords the page content - SEO" />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/small.css" />
+  <link rel="stylesheet" href="css/medium.css" />
+  <link rel="stylesheet" href="css/large.css" />
+</head>
+
+<body data-page="contact">
+  <header>
+    <img src="images/logo.svg" alt="Site logo" />
+    <div>
+      <h1>Chamber of Commerce</h1>
+      <p>City of Provo, Utah</p>
+    </div>
+    <button id="nav-button" onclick="navMenu()">&equiv;</button>
+  </header>
+
+  <nav id="nav-menu" class="hidden">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about-provo.html">About Provo</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li class="current"><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Contact Us</h2>
+
+    <section class="col-g">
+      <h2>Board of Directors</h2>
+      <div id="board-list">
+        <section>
+          <img src="images/board/chris-yadon.jpg" alt="Chris Yadon">
+          <p><strong>Chris Yadon</strong>
+            <br><em>Board Chair</em>
+            <br>Executive Director
+            <br>Younique Foundation
+          </p>
+        </section>
+        <section>
+          <img src="images/board/janae-moss.jpg" alt="Janae Moss">
+          <p><strong>Janae Moss</strong>
+            <br><em>Chair Elect</em>
+            <br>Co-Owner
+            <br>RBM Building Services
+          </p>
+        </section>
+        <section>
+          <img src="images/board/jeremy-hafen.jpg" alt="Jeremy Hafen">
+          <p><strong>Jeremy Hafen</strong>
+            <br><em>Past Chair</em>
+            <br>President
+            <br>Clyde Business Group
+          </p>
+        </section>
+        <section>
+          <img src="images/board/kirt-michaelis.jpg" alt="Kirt Michaelis">
+          <p><strong>Kirt Michaelis</strong>
+            <br><em>Treasurer
+            <br>Vice President Administration</em>
+            <br> MTECH
+          </p>
+        </section>
+      </div>
+    </section>
+
+    <section class="contact-info col-o">
+      <h2>Contact Us</h2>
+      <div>
+        <p>1 Commerce Rd</p>
+        <p>(555) 555-5555</p>
+        <p>contact@provococ.org</p>
+      </div>
+      <div>
+        <p><a href="https://twitter.com"><span class="fonticon">twitter</span> Follow us on Twitter</a></p>
+        <p><a href="https://facebook.com"><span class="fonticon">facebook</span> Like us on Facebook</a></p>
+        <p><a href="https://linkedin.com"><span class="fonticon">linkedin</span> Connect with us on Linkedin</a></p>
+      </div>
+    </section>
+
+    <section class="col-b">
+      <h2>Map</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97434.55360447904!2d-111.70911968161644!3d40.25731368465635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d9271930bf1bf%3A0x1d90f12600b556ef!2sProvo%2C%20UT!5e0!3m2!1sen!2sus!4v1617785844577!5m2!1sen!2sus"
+        width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section id="contact-form" class="col-w">
+      <h2>Get in Touch</h2>
+      <form action="contact-thanks.html" method="get">
+        <p><em>Inputs marked with * are required.</em></p>
+        <fieldset>
+          <legend>Contact Information</legend>
+          <label class="above">Full Name *<input type="text" name="name" required /></label>
+          <label class="above">Phone Number *<input type="tel" name="tel" required /></label>
+          <label class="above">Email *<input type="email" name="email" required /></label>
+          <label class="above">Comment *
+            <textarea name="comment" cols="30" rows="10" required></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" class="submit" value="Get in Touch">
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="info">
+      <h2>Contact Us</h2>
+      <p><span class="fonticon">map</span> 1 Commerce Rd</p>
+      <p><span class="fonticon">phone</span> (555) 555-5555</p>
+      <p><span class="fonticon">email</span> contact@provococ.org</p>
+    </div>
+    <div class="social">
+      <a href="https://twitter.com"><span class="fonticon">twitter</span></a>
+      <a href="https://facebook.com"><span class="fonticon">facebook</span></a>
+      <a href="https://linkedin.com"><span class="fonticon">linkedin</span></a>
+    </div>
+    <div class="meta">Last modified <span id="modified-date"></span>. <a href="attributions.html">Attributions</a></div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/liga.js"></script>
+</body>
+
+</html>
