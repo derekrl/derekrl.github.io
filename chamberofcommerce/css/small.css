@@ -7,16 +7,16 @@
   --foreground-3: #ffffff;
   --blue-1: #4acdff;
   --blue-2: #00a0dd;
-  --blue-3: #005c80;
+  --blue-3: #0078a6;
   --green-1: #aad58a;
   --green-2: #77bc43;
-  --green-3: #487329;
+  --green-3: #35541e;
   --orange-1: #f9c971;
   --orange-2: #f5a81c;
-  --orange-3: #ab7109;
+  --orange-3: #805506;
   --red-1: #f97171;
   --red-2: #f51c1c;
-  --red-3: #ab0808;
+  --red-3: #c40909;
 }
 
 body {
@@ -186,6 +186,8 @@ section.col-w a {
   color: var(--blue-3);
 }
 
+section.col-g a,
+section.col-o a,
 section.col-x a {
   color: var(--blue-1);
 }
