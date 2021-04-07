@@ -126,7 +126,7 @@ if (document.body.dataset.page == "home") {
           "style",
           "font-weight: bold; text-decoration: underline; cursor: pointer;"
         );
-        alertClose.innerText = "Close Alert";
+        alertClose.innerText = "Close this message";
 
         box.appendChild(alertEvent);
         box.appendChild(alertDesc);

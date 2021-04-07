@@ -246,7 +246,6 @@ section.left li {
 }
 
 #home-events ul {
-  /* probably display flex? */
   text-align: left;
 }
 
