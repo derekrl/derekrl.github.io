@@ -439,7 +439,8 @@ form textarea:required {
   box-shadow: 4px 4px var(--red-1);
 }
 
-form input:required:valid {
+form input:required:valid,
+form textarea:required:valid {
   box-shadow: 4px 4px var(--green-1);
 }
 
