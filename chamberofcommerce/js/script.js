@@ -1,6 +1,6 @@
 WebFont.load({
   google: {
-    families: ["Roboto Slab:400,800", "Montserrat:400,600"]
+    families: ["Roboto Slab:400,800", "Montserrat:400,600"],
   },
 });
 
@@ -9,7 +9,7 @@ function navMenu() {
   document.getElementById("nav-button").classList.toggle("open");
 }
 
-document.getElementById('modified-date').textContent = document.lastModified;
+document.getElementById("modified-date").textContent = document.lastModified;
 
 function closeAlert() {
   document.getElementById("alert-box").style.display = "none";
@@ -20,21 +20,20 @@ function homeGallery(number) {
     "Downtown at sunset",
     "West of downtown",
     "Downtown at day",
-    "Looking down from the Y"
-  ]
+    "Looking down from the Y",
+  ];
 
   let galleryMain = document.getElementById("gallery-main");
   let oldsrc = galleryMain.getAttribute("src");
-  let oldcap = oldsrc.match(/(\d{3})/)
-  galleryMain.setAttribute("src", `images/gallery/${number}-${oldcap[1]}.jpg`)
-  galleryMain.setAttribute("alt", galleryAlts[number-1]);
+  let oldcap = oldsrc.match(/(\d{3})/);
+  galleryMain.setAttribute("src", `images/gallery/${number}-${oldcap[1]}.jpg`);
+  galleryMain.setAttribute("alt", galleryAlts[number - 1]);
 
   let thumbs = document.querySelectorAll("#home-gallery img.thumb");
   thumbs.forEach((thumbnail) => {
     thumbnail.classList.remove("current");
   });
-  thumbs[number-1].classList.add("current");
-
+  thumbs[number - 1].classList.add("current");
 }
 
 function directoryDisplay(type) {
@@ -54,37 +53,47 @@ if (document.body.dataset.page == "home") {
   let galleryMainWidth = galleryMain.offsetWidth;
 
   if (galleryMainWidth > 590) {
-    galleryMain.setAttribute("src", `images/gallery/1-720.jpg`)
+    galleryMain.setAttribute("src", `images/gallery/1-720.jpg`);
   } else if (galleryMainWidth > 400) {
-    galleryMain.setAttribute("src", `images/gallery/1-540.jpg`)
+    galleryMain.setAttribute("src", `images/gallery/1-540.jpg`);
   } else {
-    galleryMain.setAttribute("src", `images/gallery/1-360.jpg`)
+    galleryMain.setAttribute("src", `images/gallery/1-360.jpg`);
   }
 
-  const lat = "40.2338"
-  const lon = "-111.6585"
+  const lat = "40.2338";
+  const lon = "-111.6585";
   const apikey = "c52a08839dea168bd8ac1f197c2f6a78";
-  const exclude = "minutely,hourly"
-  const apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=${exclude}&appid=${apikey}&units=imperial`
+  const exclude = "minutely,hourly";
+  const apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=${exclude}&appid=${apikey}&units=imperial`;
 
   fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-
-      document.getElementById("temp").textContent = Math.round(jsObject.current.temp);
-      document.getElementById("cond").textContent = jsObject.current.weather[0].main;
-      document.getElementById("hum").textContent = Math.round(jsObject.current.humidity);
+      document.getElementById("temp").textContent = Math.round(
+        jsObject.current.temp
+      );
+      document.getElementById("cond").textContent =
+        jsObject.current.weather[0].main;
+      document.getElementById("hum").textContent = Math.round(
+        jsObject.current.humidity
+      );
 
       const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-      const forecast = [jsObject.daily[0], jsObject.daily[1], jsObject.daily[2]]
+      const forecast = [
+        jsObject.daily[0],
+        jsObject.daily[1],
+        jsObject.daily[2],
+      ];
 
-      forecast.forEach(day => {
+      forecast.forEach((day) => {
         let card = document.createElement("div");
         let span = document.createElement("span");
         let icon = document.createElement("img");
 
         let date = new Date(day.dt * 1000);
-        span.textContent = `${weekdays[date.getDay()]} - ${Math.round(day.temp.day)} °F`;
+        span.textContent = `${weekdays[date.getDay()]} - ${Math.round(
+          day.temp.day
+        )} °F`;
 
         let imagesrc = `https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`;
         let imagedesc = day.weather[0].main;
@@ -94,42 +103,44 @@ if (document.body.dataset.page == "home") {
         card.appendChild(span);
         card.appendChild(icon);
         document.getElementById("forecast").appendChild(card);
-
       });
-
 
       if (jsObject.hasOwnProperty("alerts")) {
         let alert = jsObject.alerts[0];
 
         let box = document.createElement("section");
-        box.setAttribute("style", "background: var(--red-3); color: var(--foreground-3)");
-        box.setAttribute("id", "alert-box")
+        box.setAttribute(
+          "style",
+          "background: var(--red-3); color: var(--foreground-3)"
+        );
+        box.setAttribute("id", "alert-box");
         let alertEvent = document.createElement("h2");
         let alertDesc = document.createElement("p");
-        let alertClose = document.createElement("p")
+        let alertClose = document.createElement("p");
 
         alertEvent.innerText = alert.event;
         alertDesc.innerText = alert.description;
-        alertClose.setAttribute("type", "button")
-        alertClose.setAttribute("onclick", "closeAlert()")
-        alertClose.setAttribute("style", "font-weight: bold; text-decoration: underline; cursor: pointer;")
-        alertClose.innerText = "Close Alert"
+        alertClose.setAttribute("type", "button");
+        alertClose.setAttribute("onclick", "closeAlert()");
+        alertClose.setAttribute(
+          "style",
+          "font-weight: bold; text-decoration: underline; cursor: pointer;"
+        );
+        alertClose.innerText = "Close Alert";
 
         box.appendChild(alertEvent);
         box.appendChild(alertDesc);
         box.appendChild(alertClose);
 
-        document.querySelector("header").insertAdjacentElement("beforebegin", box)
-
+        document
+          .querySelector("header")
+          .insertAdjacentElement("beforebegin", box);
       }
-
     });
 }
 
 if (document.body.dataset.page == "directory") {
-
-  const requestURL =
-    "json/businesses.json";
+  const requestURL = "json/businesses.json";
 
   fetch(requestURL)
     .then(function (response) {
@@ -138,24 +149,18 @@ if (document.body.dataset.page == "directory") {
     .then(function (jsonObject) {
       const businesses = jsonObject["businesses"];
 
-      const styleClasses = [
-        "col-g",
-        "col-o",
-        "col-w",
-        "col-b",
-        "col-x",
-      ]
+      const styleClasses = ["col-g", "col-o", "col-w", "col-b", "col-x"];
 
       for (let i = 0; i < businesses.length; i++) {
         let business = businesses[i];
         let card = document.createElement("section");
-        card.setAttribute("class", styleClasses[i % 5])
+        card.setAttribute("class", styleClasses[i % 5]);
         let h3 = document.createElement("h2");
         let div = document.createElement("div");
         let addr = document.createElement("p");
-        addr.setAttribute("class", "addr")
+        addr.setAttribute("class", "addr");
         let tel = document.createElement("p");
-        addr.setAttribute("class", "tel")
+        addr.setAttribute("class", "tel");
         let link = document.createElement("a");
         let logo = document.createElement("img");
 
@@ -163,7 +168,7 @@ if (document.body.dataset.page == "directory") {
         addr.innerHTML = `<span class="fonticon">map</span> ${business.address}`;
         tel.innerHTML = `<span class="fonticon">phone</span> ${business.tel}`;
         link.setAttribute("href", business.weblink);
-        link.innerHTML = `<span class="fonticon">link</span> Website`
+        link.innerHTML = `<span class="fonticon">link</span> Website`;
         logo.setAttribute("src", `images/logos/${business.logo}`);
         logo.setAttribute("alt", `${business.name} logo`);
 
@@ -175,7 +180,6 @@ if (document.body.dataset.page == "directory") {
         card.appendChild(logo);
 
         document.getElementById("directory").appendChild(card);
-      };
-
+      }
     });
 }

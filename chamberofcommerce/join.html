@@ -1,117 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Us - Provo Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="Membership Application - Provo City Chamber of Commerce"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Join Us - Provo Chamber of Commerce</title>
-  <meta name="description" content="~155 characters summarizing with keywords the page content - SEO" />
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/small.css" />
-  <link rel="stylesheet" href="css/medium.css" />
-  <link rel="stylesheet" href="css/large.css" />
-</head>
+  <body data-page="join">
+    <header>
+      <img src="images/logo.svg" alt="Site logo" />
+      <div>
+        <h1>Chamber of Commerce</h1>
+        <p>City of Provo, Utah</p>
+      </div>
+      <button id="nav-button" onclick="navMenu()">&equiv;</button>
+    </header>
 
-<body data-page="join">
-  <header>
-    <img src="images/logo.svg" alt="Site logo" />
-    <div>
-      <h1>Chamber of Commerce</h1>
-      <p>City of Provo, Utah</p>
-    </div>
-    <button id="nav-button" onclick="navMenu()">&equiv;</button>
-  </header>
+    <nav id="nav-menu" class="hidden">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-provo.html">About Provo</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li class="current"><a href="#">Join</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
 
-  <nav id="nav-menu" class="hidden">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about-provo.html">About Provo</a></li>
-      <li><a href="directory.html">Directory</a></li>
-      <li class="current"><a href="#">Join</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
+    <main>
+      <h2>Join the Chamber of Commerce</h2>
 
-  <main>
-    <h2>Join the Chamber of Commerce</h2>
+      <section class="col-g">
+        <h2>Why Join?</h2>
+        <p>
+          Traditional value provided by chambers of commerce is shifting to
+          measurable ROIs. By joining the Provo City Chamber, you are a member
+          of the largest collection of change-makers in the county.
+        </p>
+        <p>
+          As an investor, your business enjoys a competitive edge with
+          leadership opportunities, connections to business leaders, and
+          business-growth initiatives. As with all investments, a good investor
+          expects to see a worthwhile return.
+        </p>
+        <p>
+          The Provo City Chamber's expanding portfolio of work desires to assist
+          in growing your business and provide a thriving Valley for you and
+          your employees' families to enjoy.
+        </p>
+      </section>
 
-    <section class="col-g">
-      <h2>Why Join?</h2>
-      <p>Traditional value provided by chambers of commerce is shifting to measurable ROIs. By joining the Provo City
-        Chamber, you are a member of the largest collection of change-makers in the county.</p>
-      <p>As an investor, your business enjoys a competitive edge with leadership opportunities, connections to business
-        leaders, and business-growth initiatives. As with all investments, a good investor expects to see a worthwhile
-        return.</p>
-      <p>The Provo City Chamber's expanding portfolio of work desires to assist in growing your business and provide a
-        thriving Valley for you and your employees' families to enjoy.</p>
-    </section>
+      <section id="join-form" class="col-w">
+        <h2>Application Form</h2>
+        <form action="join-thanks.html" method="get">
+          <p><em>Inputs marked with * are required.</em></p>
+          <fieldset>
+            <legend>Contact Information</legend>
+            <label class="above"
+              >First Name *<input type="text" name="fname" required
+            /></label>
+            <label class="above"
+              >Last Name *<input type="text" name="lname" required
+            /></label>
+            <label class="above">Title<input type="text" name="title" /></label>
+            <label class="above"
+              >Email *<input
+                type="email"
+                name="email"
+                placeholder="owner@example.com"
+                required
+            /></label>
+            <label class="above"
+              >Cell Phone Number<input type="tel" name="tel" required
+            /></label>
+          </fieldset>
 
-    <section id="join-form" class="col-w">
-      <h2>Application Form</h2>
-      <form action="join-thanks.html" method="get">
-        <p><em>Inputs marked with * are required.</em></p>
-        <fieldset>
-          <legend>Contact Information</legend>
-          <label class="above">First Name *<input type="text" name="fname" required></label>
-          <label class="above">Last Name *<input type="text" name="lname" required></label>
-          <label class="above">Title<input type="text" name="title"></label>
-          <label class="above">Email *<input type="email" name="email" placeholder="owner@example.com" required></label>
-          <label class="above">Cell Phone Number<input type="tel" name="tel" required></label>
-        </fieldset>
+          <fieldset>
+            <legend>Business Information</legend>
+            <label class="above"
+              >Business Name *<input type="text" name="b-name" required
+            /></label>
+            <label class="above"
+              >Business Address<input type="text" name="b-address"
+            /></label>
+            <label class="above"
+              >Business Website<input type="url" name="b-site"
+            /></label>
+            <label class="above"
+              >Business Description
+              <textarea name="b-description" cols="30" rows="10"></textarea>
+            </label>
+          </fieldset>
 
-        <fieldset>
-          <legend>Business Information</legend>
-          <label class="above">Business Name *<input type="text" name="b-name" required></label>
-          <label class="above">Business Address<input type="text" name="b-address"></label>
-          <label class="above">Business Website<input type="url" name="b-site"></label>
-          <label class="above">Business Description
-            <textarea name="b-description" cols="30" rows="10"></textarea>
-          </label>
-        </fieldset>
+          <fieldset>
+            <legend>
+              Membership Level
+              <span id="level-key-button" onclick="toggleLevelKey()">?</span>
+            </legend>
+            <div id="level-key">
+              <p><b>Non-Profit Tier:</b></p>
+              <p>Listed in directory, Access to members-only events</p>
+              <p><b>Bronze Tier:</b></p>
+              <p>
+                All of the above, Enhanced directory listing, Added to ad
+                rotation on Chamber website
+              </p>
+              <p><b>Silver Tier:</b></p>
+              <p>
+                All of the above, Priority placement in directory, Dedicated ad
+                on Chamber website
+              </p>
+              <p><b>Gold Tier:</b></p>
+              <p>
+                All of the above, Corporate recognition, Chamber board
+                eligibility
+              </p>
+            </div>
+            <label class="side"
+              ><input type="radio" name="level" value="yes" />&nbsp;Non-Profit
+              ($100)</label
+            >
+            <label class="side"
+              ><input type="radio" name="level" value="yes" />&nbsp;Bronze
+              ($200)</label
+            >
+            <label class="side"
+              ><input type="radio" name="level" value="yes" />&nbsp;Silver
+              ($400)</label
+            >
+            <label class="side"
+              ><input type="radio" name="level" value="yes" />&nbsp;Gold
+              ($1000)</label
+            >
+          </fieldset>
 
-        <fieldset>
-          <legend>Membership Level <span id="level-key-button" onclick="toggleLevelKey()">?</span></legend>
-          <div id="level-key">
-            <p><b>Non-Profit Tier:</b></p>
-            <p>Listed in directory, Access to members-only events</p>
-            <p><b>Bronze Tier:</b></p>
-            <p>All of the above, Enhanced directory listing, Added to ad rotation on Chamber website</p>
-            <p><b>Silver Tier:</b></p>
-            <p>All of the above, Priority placement in directory, Dedicated ad on Chamber website</p>
-            <p><b>Gold Tier:</b></p>
-            <p>All of the above, Corporate recognition, Chamber board eligibility</p>
-          </div>
-          <label class="side"><input type="radio" name="level" value="yes" />&nbsp;Non-Profit ($100)</label>
-          <label class="side"><input type="radio" name="level" value="yes" />&nbsp;Bronze ($200)</label>
-          <label class="side"><input type="radio" name="level" value="yes" />&nbsp;Silver ($400)</label>
-          <label class="side"><input type="radio" name="level" value="yes" />&nbsp;Gold ($1000)</label>
-        </fieldset>
+          <input type="submit" class="submit" value="Apply to Join" />
+        </form>
+      </section>
+    </main>
 
-        <input type="submit" class="submit" value="Apply to Join">
-
-      </form>
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="info">
-      <h2>Contact Us</h2>
-      <p><span class="fonticon">map</span> 24 Commerce Rd</p>
-      <p><span class="fonticon">phone</span> (801) 555-1379</p>
-      <p><span class="fonticon">email</span> contact@provococ.org</p>
-    </div>
-    <div class="social">
-      <a href="https://twitter.com"><span class="fonticon">twitter</span></a>
-      <a href="https://facebook.com"><span class="fonticon">facebook</span></a>
-      <a href="https://linkedin.com"><span class="fonticon">linkedin</span></a>
-    </div>
-    <div class="meta">Last modified <span id="modified-date"></span>. <a href="attributions.html">Attributions</a></div>
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-  <script src="js/script.js"></script>
-  <script src="js/liga.js"></script>
-</body>
-
+    <footer>
+      <div class="info">
+        <h2>Contact Us</h2>
+        <p><span class="fonticon">map</span> 24 Commerce Rd</p>
+        <p><span class="fonticon">phone</span> (801) 555-1379</p>
+        <p><span class="fonticon">email</span> contact@provococ.org</p>
+      </div>
+      <div class="social">
+        <a href="https://twitter.com"><span class="fonticon">twitter</span></a>
+        <a href="https://facebook.com"
+          ><span class="fonticon">facebook</span></a
+        >
+        <a href="https://linkedin.com"
+          ><span class="fonticon">linkedin</span></a
+        >
+      </div>
+      <div class="meta">
+        Last modified <span id="modified-date"></span>.
+        <a href="attributions.html">Attributions</a>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/liga.js"></script>
+  </body>
 </html>

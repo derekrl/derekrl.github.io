@@ -1,160 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chamber of Commerce - City of Provo, Utah</title>
+    <meta
+      name="description"
+      content="City of Provo, Utah Chamber of Commerce - Gallery, Purpose and Goals, Events, Local Weather"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chamber of Commerce - City of Provo, Utah</title>
-  <meta name="description" content="~155 characters summarizing with keywords the page content - SEO" />
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/small.css" />
-  <link rel="stylesheet" href="css/medium.css" />
-  <link rel="stylesheet" href="css/large.css" />
-</head>
-
-<body data-page="home">
-  <header>
-    <img src="images/logo.svg" alt="Site logo" />
-    <div>
-      <h1>Chamber of Commerce</h1>
-      <p>City of Provo, Utah</p>
-    </div>
-    <button id="nav-button" onclick="navMenu()">&equiv;</button>
-  </header>
-
-  <nav id="nav-menu" class="hidden">
-    <ul>
-      <li class="current"><a href="#">Home</a></li>
-      <li><a href="about-provo.html">About Provo</a></li>
-      <li><a href="directory.html">Directory</a></li>
-      <li><a href="join.html">Join</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <section id="home-gallery" class="col-w">
-      <div class="grid">
-        <img id="gallery-main" src="images/gallery/placeholder.jpg" alt="Downtown at sunset">
-        <img class="thumb current" onclick="homeGallery(1)" src="images/gallery/1-180.jpg"
-          alt="Thumbnail of Downtown at sunset">
-        <img class="thumb" onclick="homeGallery(2)" src="images/gallery/2-180.jpg" alt="Thumbnail of West of downtown">
-        <img class="thumb" onclick="homeGallery(3)" src="images/gallery/3-180.jpg" alt="Thumbnail of Downtown at day">
-        <img class="thumb" onclick="homeGallery(4)" src="images/gallery/4-180.jpg"
-          alt="Thumbnail of Looking down from the Y">
-      </div>
-    </section>
-
-    <section class="col-o left">
-      <h2>Purpose and Goals</h2>
-      <p>As the voice for Provo business, we lead, convene, & influence to strengthen an already dynamic business
-        climate that supports all sectors of our economy & delivers member value.</p>
-      <p>By 2065, Utah County will add 1 million people to its population, 85% from internal growth. We are planning for
-        healthy & meaningful places for our kids to have places to work, live, learn, & play.</p>
-      <p>The Provo City Chamber of Commerce's mission is to build relationships, advocate principle-based public
-        policy, & promote business & community prosperity.</p>
-    </section>
-
-    <div id="home-ads" class="col-none">
-      <section class="col-g">
-        <div>
-          <h2>Famous Dave's Express</h2>
-          <p>Serving up authentic, slow-cooked BBQ in a quick-casual format. Join us for our Famous BBQ, Legendary
-            Burgers, Signature Sandwiches, and more!</p>
-        </div>
-        <div><a
-            href="https://maps.google.com/maps?q=Famous%20Dave%27s%20Express%201280%20North%20University%20Avenue%20%20Provo,%20%20UT%20%2084604">
-            <span class="fonticon">map</span> 1280 North University Avenue</a>
-          <img src="images/home-placeholder.jpg" data-src="images/home-famousdaves.jpg"
-            alt="Famous Dave's Express building">
-        </div>
-      </section>
-      <section class="col-g">
-        <div>
-          <h2>Dollar Loan Center</h2>
-          <p>This is Dollar Loan Center your Community Short-Term, personal loan provider with 57 locations across
-            Nevada and Utah. Established in 1998, were the top provider of signature loans in the cash loan industry.
-          </p>
-        </div>
-        <div>
-          <a
-            href="https://maps.google.com/maps?q=Dollar%20Loan%20Center%201326%20S%20University%20Ave%20%20Provo,%20%20UT%20%2084601">
-            <span class="fonticon">map</span> 1326 S University Ave</a>
-          <img src="images/home-placeholder.jpg" data-src="images/home-dollarloancenter.jpg"
-            alt="Dollar Loan Center building">
-        </div>
-      </section>
-      <section class="col-g">
-        <div>
-          <h2>Residence Inn by Marriott</h2>
-          <p>Residence Inn by Marriott is the extended-stay hotel that helps you feel connected while away from home and
-            maintain a balance of work and life. Our homelike surroundings invite you to relax, and our community
-            atmosphere will make you feel welcome. </p>
-        </div>
-        <div>
-          <a
-            href="https://maps.google.com/maps?q=Residence%20Inn%20by%20Marriott%20Provo%20South%20University%201290%20South%20University%20Avenue%20%20Provo,%20%20UT%20%2084601">
-            <span class="fonticon">map</span> 1290 S University Ave</a>
-          <img src="images/home-placeholder.jpg" data-src="images/home-residenceinn.jpg"
-            alt="Residence Inn by Marriott building">
-        </div>
-      </section>
-    </div>
-
-    <section class="col-x left">
-      <h2>Join the Chamber!</h2>
-      <p>Traditional value provided by chambers of commerce is shifting to measurable ROIs. By joining the Provo City
-        Chamber, you are a member of the largest collection of change-makers in the county.</p>
-      <p>As an investor, your business enjoys a competitive edge with leadership opportunities, connections to business
-        leaders, and business-growth initiatives. As with all investments, a good investor expects to see a worthwhile
-        return.</p>
-      <p>The Provo City Chamber's expanding portfolio of work desires to assist in growing your business and provide a
-        thriving Valley for you and your employees' families to enjoy.</p>
-        <p><a href="join.html"><span class="fonticon">link</span> Join Today</a></p>
-    </section>
-
-    <section id="home-events" class="col-w">
-      <h2>Upcoming Events</h2>
-      <ul>
-        <li>Wed April 7, 6 PM - 8 PM: Identity in the Everyday Hustle: Navigating Workplaces</li>
-        <li>Fri April 9, 9 AM - 2:30 PM: 2021 UWHEN Annual Leadership Conference</li>
-        <li>Fri April 9, 12 PM - 1:15 PM: Rising Athenas, Male Allies, and the Power of Gender Partnership</li>
-        <li>Fri April 16, 8 AM - 11 AM: Designing Corporate Women's Networks, Initiatives, and Leadership Programs</li>
-      </ul>
-    </section>
-
-    <section id="home-weather" class="col-b">
+  <body data-page="home">
+    <header>
+      <img src="images/logo.svg" alt="Site logo" />
       <div>
-        <h2>Local Weather</h2>
-        <p>Temperature: <span id="temp">##</span> &deg;F</p>
-        <p>Condition: <span id="cond">##</span></p>
-        <p>Humidity: <span id="hum">##</span>%</p>
+        <h1>Chamber of Commerce</h1>
+        <p>City of Provo, Utah</p>
       </div>
-      <div id="forecast">
-        <!-- Generate using JS -->
+      <button id="nav-button" onclick="navMenu()">&equiv;</button>
+    </header>
+
+    <nav id="nav-menu" class="hidden">
+      <ul>
+        <li class="current"><a href="#">Home</a></li>
+        <li><a href="about-provo.html">About Provo</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="home-gallery" class="col-w">
+        <div class="grid">
+          <img
+            id="gallery-main"
+            src="images/gallery/placeholder.jpg"
+            alt="Downtown at sunset"
+          />
+          <img
+            class="thumb current"
+            onclick="homeGallery(1)"
+            src="images/gallery/1-180.jpg"
+            alt="Thumbnail of Downtown at sunset"
+          />
+          <img
+            class="thumb"
+            onclick="homeGallery(2)"
+            src="images/gallery/2-180.jpg"
+            alt="Thumbnail of West of downtown"
+          />
+          <img
+            class="thumb"
+            onclick="homeGallery(3)"
+            src="images/gallery/3-180.jpg"
+            alt="Thumbnail of Downtown at day"
+          />
+          <img
+            class="thumb"
+            onclick="homeGallery(4)"
+            src="images/gallery/4-180.jpg"
+            alt="Thumbnail of Looking down from the Y"
+          />
+        </div>
+      </section>
+
+      <section class="col-o left">
+        <h2>Purpose and Goals</h2>
+        <p>
+          As the voice for Provo business, we lead, convene, & influence to
+          strengthen an already dynamic business climate that supports all
+          sectors of our economy & delivers member value.
+        </p>
+        <p>
+          By 2065, Utah County will add 1 million people to its population, 85%
+          from internal growth. We are planning for healthy & meaningful places
+          for our kids to have places to work, live, learn, & play.
+        </p>
+        <p>
+          The Provo City Chamber of Commerce's mission is to build
+          relationships, advocate principle-based public policy, & promote
+          business & community prosperity.
+        </p>
+      </section>
+
+      <div id="home-ads" class="col-none">
+        <section class="col-g">
+          <div>
+            <h2>Famous Dave's Express</h2>
+            <p>
+              Serving up authentic, slow-cooked BBQ in a quick-casual format.
+              Join us for our Famous BBQ, Legendary Burgers, Signature
+              Sandwiches, and more!
+            </p>
+          </div>
+          <div>
+            <a
+              href="https://maps.google.com/maps?q=Famous%20Dave%27s%20Express%201280%20North%20University%20Avenue%20%20Provo,%20%20UT%20%2084604"
+            >
+              <span class="fonticon">map</span> 1280 North University Avenue</a
+            >
+            <img
+              src="images/home-placeholder.jpg"
+              data-src="images/home-famousdaves.jpg"
+              alt="Famous Dave's Express building"
+            />
+          </div>
+        </section>
+        <section class="col-g">
+          <div>
+            <h2>Dollar Loan Center</h2>
+            <p>
+              This is Dollar Loan Center your Community Short-Term, personal
+              loan provider with 57 locations across Nevada and Utah.
+              Established in 1998, were the top provider of signature loans in
+              the cash loan industry.
+            </p>
+          </div>
+          <div>
+            <a
+              href="https://maps.google.com/maps?q=Dollar%20Loan%20Center%201326%20S%20University%20Ave%20%20Provo,%20%20UT%20%2084601"
+            >
+              <span class="fonticon">map</span> 1326 S University Ave</a
+            >
+            <img
+              src="images/home-placeholder.jpg"
+              data-src="images/home-dollarloancenter.jpg"
+              alt="Dollar Loan Center building"
+            />
+          </div>
+        </section>
+        <section class="col-g">
+          <div>
+            <h2>Residence Inn by Marriott</h2>
+            <p>
+              Residence Inn by Marriott is the extended-stay hotel that helps
+              you feel connected while away from home and maintain a balance of
+              work and life. Our homelike surroundings invite you to relax, and
+              our community atmosphere will make you feel welcome.
+            </p>
+          </div>
+          <div>
+            <a
+              href="https://maps.google.com/maps?q=Residence%20Inn%20by%20Marriott%20Provo%20South%20University%201290%20South%20University%20Avenue%20%20Provo,%20%20UT%20%2084601"
+            >
+              <span class="fonticon">map</span> 1290 S University Ave</a
+            >
+            <img
+              src="images/home-placeholder.jpg"
+              data-src="images/home-residenceinn.jpg"
+              alt="Residence Inn by Marriott building"
+            />
+          </div>
+        </section>
       </div>
-    </section>
-  </main>
 
-  <footer>
-    <div class="info">
-      <h2>Contact Us</h2>
-      <p><span class="fonticon">map</span> 1 Commerce Rd</p>
-      <p><span class="fonticon">phone</span> (801) 555-1379</p>
-      <p><span class="fonticon">email</span> contact@provococ.org</p>
-    </div>
-    <div class="social">
-      <a href="https://twitter.com"><span class="fonticon">twitter</span></a>
-      <a href="https://facebook.com"><span class="fonticon">facebook</span></a>
-      <a href="https://linkedin.com"><span class="fonticon">linkedin</span></a>
-    </div>
-    <div class="meta">Last modified <span id="modified-date"></span>. <a href="attributions.html">Attributions</a></div>
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-  <script src="js/script.js"></script>
-  <script src="js/lazyload.js"></script>
-  <script src="js/liga.js"></script>
-</body>
+      <section class="col-x left">
+        <h2>Join the Chamber!</h2>
+        <p>
+          Traditional value provided by chambers of commerce is shifting to
+          measurable ROIs. By joining the Provo City Chamber, you are a member
+          of the largest collection of change-makers in the county.
+        </p>
+        <p>
+          As an investor, your business enjoys a competitive edge with
+          leadership opportunities, connections to business leaders, and
+          business-growth initiatives. As with all investments, a good investor
+          expects to see a worthwhile return.
+        </p>
+        <p>
+          The Provo City Chamber's expanding portfolio of work desires to assist
+          in growing your business and provide a thriving Valley for you and
+          your employees' families to enjoy.
+        </p>
+        <p>
+          <a href="join.html"><span class="fonticon">link</span> Join Today</a>
+        </p>
+      </section>
 
+      <section id="home-events" class="col-w">
+        <h2>Upcoming Events</h2>
+        <ul>
+          <li>
+            Wed April 7, 6 PM - 8 PM: Identity in the Everyday Hustle:
+            Navigating Workplaces
+          </li>
+          <li>
+            Fri April 9, 9 AM - 2:30 PM: 2021 UWHEN Annual Leadership Conference
+          </li>
+          <li>
+            Fri April 9, 12 PM - 1:15 PM: Rising Athenas, Male Allies, and the
+            Power of Gender Partnership
+          </li>
+          <li>
+            Fri April 16, 8 AM - 11 AM: Designing Corporate Women's Networks,
+            Initiatives, and Leadership Programs
+          </li>
+        </ul>
+      </section>
+
+      <section id="home-weather" class="col-b">
+        <div>
+          <h2>Local Weather</h2>
+          <p>Temperature: <span id="temp">##</span> &deg;F</p>
+          <p>Condition: <span id="cond">##</span></p>
+          <p>Humidity: <span id="hum">##</span>%</p>
+        </div>
+        <div id="forecast">
+          <!-- Generate using JS -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="info">
+        <h2>Contact Us</h2>
+        <p><span class="fonticon">map</span> 1 Commerce Rd</p>
+        <p><span class="fonticon">phone</span> (801) 555-1379</p>
+        <p><span class="fonticon">email</span> contact@provococ.org</p>
+      </div>
+      <div class="social">
+        <a href="https://twitter.com"><span class="fonticon">twitter</span></a>
+        <a href="https://facebook.com"
+          ><span class="fonticon">facebook</span></a
+        >
+        <a href="https://linkedin.com"
+          ><span class="fonticon">linkedin</span></a
+        >
+      </div>
+      <div class="meta">
+        Last modified <span id="modified-date"></span>.
+        <a href="attributions.html">Attributions</a>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/liga.js"></script>
+  </body>
 </html>
